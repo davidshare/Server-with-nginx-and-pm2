@@ -41,8 +41,8 @@ cloneRepository(){
 setupProject(){
 	output "installing node modules" $GREEN
 	cd $REPOSITORY_FOLDER
-	sudo npm install -y
 	sudo npm audit fix --force
+	sudo npm install -y
 	sudo npm run build
 	output "successfully installed node modules" $GREEN
 }
